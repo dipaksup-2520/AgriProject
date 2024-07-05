@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Agri_product</display-name>
+  <welcome-file-list>
+  
+    <welcome-file>index.jsp</welcome-file>
+
+  </welcome-file-list>
+  <servlet>	
+  <servlet-name>addData</servlet-name>
+  <servlet-class>com.nt.AddServlet</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addData</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>updatePro</servlet-name>
+  <servlet-class>com.nt.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>updatePro</servlet-name>
+  <url-pattern>/update</url-pattern>
+  
+  
+  
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>deletePro</servlet-name>
+  <servlet-class>com.nt.DeleteServlet</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>deletePro</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  
+  <servlet-name>selectAll</servlet-name>
+  <servlet-class>com.nt.SelectAllProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>selectAll</servlet-name>
+  <url-pattern>/all</url-pattern>
+  
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>less stock</servlet-name>
+  <servlet-class>com.nt.LessStockServlet</servlet-class>
+  
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name> less stock </servlet-name>
+  <url-pattern>/less</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
